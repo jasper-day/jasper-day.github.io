@@ -1,0 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans);
+
+:root {
+    --background-color: hsl(200, 90%, 10%);
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Open Sans', sans-serif;
+}
