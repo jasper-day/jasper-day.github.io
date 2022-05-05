@@ -1,10 +1,123 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans);
 
 :root {
-    --background-color: hsl(200, 90%, 10%);
+    --background-color: hsl(200, 15%, 90%);
+    --font-color: hsl(200, 90%, 10%);
 }
 
 body {
     background-color: var(--background-color);
     font-family: 'Open Sans', sans-serif;
+    font-size: large;
+    color: var(--font-color);
+}
+
+/* HEADER */
+
+body>header {
+    width: 70%;
+    margin: 2em auto;
+    /*border: 1px solid black;*/
+    border-bottom: 0.1rem dashed hsl(200, 90%, 25%);
+    display: flex;
+    justify-content: space-between;
+    align-content: baseline;
+}
+
+.title {
+    font-size: xx-large;
+    /*border: 1px solid black;*/
+    font-variant: small-caps;
+    padding-left: 1rem;
+    /*display: flex;
+    align-items: flex-end;*/
+    /*text-align: bottom;*/
+}
+/*.title span {
+    
+}*/
+.title strong {
+    color: maroon;
+}
+
+.horizontal-nav {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.horizontal-nav ul {
+    vertical-align: middle;
+    display: flex;
+    align-content: flex-end;
+    padding: 0;
+    margin: 0;
+}
+.horizontal-nav ul li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.2rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li a {
+    color: var(--font-color);
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    float: right;
+    border: 1px solid black;
+}
+.sidebar header p {
+    border: 1px solid black;
+    text-align: right;
+    padding: 1rem;
+    font-size: larger;
+    font-variant: small-caps;
+}
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.sidebar ul li {
+    border: 1px solid black;
+    border-radius: 0.1rem;
+    margin: 0.5rem;
+    padding: 1rem;
+}
+
+.sidebar::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* CONTENT */
+
+.content {
+    width: 70%;
+    margin-left: 15%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    align-items: center;
+}
+
+/* FOOTER */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    border: 1px solid black;
+    left: 15%;
+    width: 70%
 }
